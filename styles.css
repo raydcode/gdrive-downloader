@@ -23,6 +23,9 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #000000;
+  color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 p {
@@ -42,12 +45,11 @@ img {
 
 .main-section {
   display: flex;
-  justify-content: center;
 }
 
 .info {
   font-size: 1.6rem;
-  width: 50%;
+  width: 30%;
   height: 100vh;
   padding-bottom: 5px;
   border-right: 2px solid #eee;
@@ -226,8 +228,12 @@ section .content {
   border-bottom: 2px solid var(--dark-grey);
   margin-bottom: 2rem;
   background-color: rgba(0, 0, 0, 0.1);
-  color: var(--dark-grey);
+  color: var(--white);
   transition: all 0.3s;
+}
+
+.content form label input:focus:focus {
+  color: var(--dark-grey);
 }
 
 .content form label input:focus:invalid {
@@ -246,11 +252,11 @@ section .content {
   left: 1rem;
   top: 1.5rem;
   font-size: 1.3rem;
-  color: #1c2b2d;
+  color: var(--color-primary);
 }
 
 ::placeholder {
-  color: var(--dark-grey);
+  color: var(--white);
   font-size: 1.5rem;
 }
 
@@ -287,7 +293,7 @@ section .content {
 
 .content .btn:hover {
   transform: translateY(-3px);
-  background-color: var(--color-primary);
+  background-color: var(--light-blue);
 }
 
 button.clear {
